@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+    <persona>
+        <nombre>Angel</nombre>
+        <apellido>Apellido</apellido>
+        <edad>233</edad>
+    </persona>
+    <persona>
+        <nombre>Carlos</nombre>
+        <apellido>Lucchese</apellido>
+        <edad>39</edad>
+    </persona>
+    <persona>
+        <nombre>Maria</nombre>
+        <apellido>Gonzales</apellido>
+        <edad>28</edad>
+    </persona>
+</datos>

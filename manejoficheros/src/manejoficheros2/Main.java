@@ -70,13 +70,13 @@ System.out.println("Error al buscar en la ruta indicada"); }
   Random rd = new Random();
   rd.archivo=archivo;
   rd.escribirRandomFichero();
-   
-  
-  
- 
-  
+
+
+
+
+
 }
-    
-    
-    
+
+
+
 }

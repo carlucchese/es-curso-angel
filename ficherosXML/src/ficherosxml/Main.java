@@ -14,7 +14,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      // CrearDocumentoXML.crearDocumentoXML("concesionario.xml");
+      CrearDocumentoXML.crearDocumentoXML("concesionario.xml");
       LeerFichero.leerFicheroXML("concesionario.xml");
     }
     
