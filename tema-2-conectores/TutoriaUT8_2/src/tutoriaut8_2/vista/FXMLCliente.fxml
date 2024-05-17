@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutoriaut8_2.controlador.FXMLClienteController">
+   <children>
+      <Label layoutX="45.0" layoutY="41.0" text="ID" />
+      <Label layoutX="45.0" layoutY="93.0" text="Nombre" />
+      <Label layoutX="46.0" layoutY="148.0" text="Dirección" />
+      <Label layoutX="45.0" layoutY="198.0" text="Teléfono" />
+      <TextField fx:id="tfId" layoutX="142.0" layoutY="36.0" />
+      <TextField fx:id="tfNombre" layoutX="142.0" layoutY="88.0" />
+      <TextField fx:id="tfDireccion" layoutX="143.0" layoutY="143.0" />
+      <TextField fx:id="tfTelefono" layoutX="142.0" layoutY="193.0" />
+      <TableView fx:id="tvClientes" layoutX="335.0" layoutY="36.0" onMouseClicked="#filaSeleccionada" prefHeight="248.0" prefWidth="590.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="67.0" text="ID" />
+            <TableColumn fx:id="colNombre" prefWidth="105.0" text="NOMBRE" />
+            <TableColumn fx:id="colDireccion" prefWidth="138.0" text="DIRECCION" />
+            <TableColumn fx:id="colTelefono" prefWidth="115.0" text="TELÉFONO" />
+            <TableColumn fx:id="colFechaNac" prefWidth="164.0" text="FECHA_NAC" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsertar" layoutX="336.0" layoutY="298.0" mnemonicParsing="false" onAction="#insertarCliente" text="Insertar Cliente" />
+      <Button fx:id="btnBorrarCliente" layoutX="683.0" layoutY="298.0" mnemonicParsing="false" onAction="#borrarCliente" text="Borrar Cliente" />
+      <Button fx:id="btnBorrarTodos" layoutX="834.0" layoutY="298.0" mnemonicParsing="false" onAction="#borrarTodos" text="Borrar Todos" />
+      <Label layoutX="45.0" layoutY="249.0" text="Fecha Nac" />
+      <DatePicker fx:id="dpFecha" layoutX="142.0" layoutY="244.0" prefHeight="27.0" prefWidth="161.0" />
+      <Label fx:id="labelPrueba" alignment="CENTER" contentDisplay="CENTER" layoutX="336.0" layoutY="368.0" prefHeight="17.0" prefWidth="583.0" text="Mensaje" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="btnLimpiar" layoutX="193.0" layoutY="298.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+      <Button fx:id="btnModificarCliente" layoutX="502.0" layoutY="298.0" mnemonicParsing="false" onAction="#modificarCliente" text="Modificar Cliente" />
+   </children>
+</AnchorPane>
